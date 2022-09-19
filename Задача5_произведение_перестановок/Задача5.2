@@ -1,0 +1,26 @@
+#include <stdio.h>  
+#include <stdlib.h>
+#include <math.h>     
+
+int main(){
+	
+	int i, *p, *res, n;
+	
+	scanf("%d", &n);
+	
+	p = (int*)malloc(n*sizeof(int));
+	res = (int*)malloc(n*sizeof(int));
+	
+	for(i=0;i<n;i++){
+		scanf("%d", &p[i]);
+		}
+		
+	for(i=0;i<n;i++)
+		res[p[i]-1]=i+1;
+		
+	for(i=0;i<n;i++)
+		printf("%d ", res[i]);
+		
+	return 0; 
+	
+}
