@@ -1,0 +1,29 @@
+#include <stdio.h>  
+#include <stdlib.h>
+#include <math.h>     
+
+int main(){
+	
+	int i, n;		
+	scanf("%d", &n);
+	
+	int p1[n], p2[n], res[n];
+	
+	for(i=0;i<n;i++){
+		scanf("%d", &p1[i]);
+		}
+		
+	for(i=0;i<n;i++){
+		scanf("%d", &p2[i]);
+		}
+		
+	for(i=0;i<n;i++)
+		res[i]=p1[p2[i]-1];
+		
+	for(i=0;i<n;i++)
+		printf("%d ", res[i]);
+		
+	return 0; 
+	
+}
+
